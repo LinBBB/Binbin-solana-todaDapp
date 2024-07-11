@@ -14,15 +14,15 @@ let dummyTodos = [
     {
         account:{
             idx: '0',
-            content: 'Finish the essay collaboration',
-            marked: false,
+            content: 'Binbin Learn Solana Everyday',
+            marked: true,
         }
 
     },
     {
         account:{
             idx: '1',
-            content: 'Understand Static Todo App',
+            content: 'Binbin Understand Static Todo App',
             marked: false,          
         }
 
@@ -30,28 +30,28 @@ let dummyTodos = [
     {
         account:{
             idx: '2',
-            content: 'Read next chapter of the book in Danish',
+            content: 'Binbin Read next chapter of the book in Danish',
             marked: false,   
         }
     },
     {
         account:{
             idx: '3',
-            content: 'Do the math for next monday',
+            content: 'Binbin Do the math for next monday',
             marked: false,   
         }
     },
     {
         account:{
             idx: '4',
-            content: 'Send the finished assignment',
+            content: 'Binbin Send the finished assignment',
             marked: true,  
         }
     },
     {
         account:{
             idx: '5',
-            content: 'Read english book chapter 5',
+            content: 'Binbin Read english book chapter 5',
             marked: true,          
         }
     },
@@ -142,6 +142,7 @@ export function useTodo() {
           )
     }
 
+    
 
     const incompleteTodos = useMemo(() => todos.filter((todo) => !todo.account.marked), [todos])
     const completedTodos = useMemo(() => todos.filter((todo) => todo.account.marked), [todos])
